@@ -398,7 +398,96 @@ html {
         font-size: 1.01em;
     }
 }
+.react-calendar { 
+ width: 400px;
+ max-width: 100%;
+ background-color: #fff;
+ color: #222;
+ border-radius: 8px;
+ box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+ font-family: Arial, Helvetica, sans-serif;
+ line-height: 1.125em;
+}
+.react-calendar__navigation button {
+ color: #6f48eb;
+ min-width: 44px;
+ background: none;
+ font-size: 16px;
+ margin-top: 8px;
+}
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+ background-color: #f8f8fa;
+}
+.react-calendar__navigation button[disabled] {
+ background-color: #f0f0f0;
+}
+abbr[title] {
+ text-decoration: none;
+}
+/* .react-calendar__month-view__days__day--weekend {
+ color: #d10000;
+} */
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+ background: #f8f8fa;
+ color: #6f48eb;
+ border-radius: 6px;
+}
+.react-calendar__tile--now {
+ background: #6f48eb33;
+ border-radius: 6px;
+ font-weight: bold;
+ color: #6f48eb;
+}
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+ background: #6f48eb33;
+ border-radius: 6px;
+ font-weight: bold;
+ color: #6f48eb;
+}
+.react-calendar__tile--hasActive:enabled:hover,
+.react-calendar__tile--hasActive:enabled:focus {
+ background: #f8f8fa;
+}
+.react-calendar__tile--active {
+ background: #6f48eb;
+ border-radius: 6px;
+ font-weight: bold;
+ color: white;
+}
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+ background: #6f48eb;
+ color: white;
+}
+.react-calendar--selectRange .react-calendar__tile--hover {
+ background-color: #f8f8fa;
+}
+.react-calendar__tile--range {
+ background: #f8f8fa;
+ color: #6f48eb;
+ border-radius: 0;
+}
+.react-calendar__tile--rangeStart {
+ border-top-right-radius: 0;
+ border-bottom-right-radius: 0;
+ border-top-left-radius: 6px;
+ border-bottom-left-radius: 6px;
+ background: #6f48eb;
+ color: white;
+}
+.react-calendar__tile--rangeEnd {
+ border-top-left-radius: 0;
+ border-bottom-left-radius: 0;
+ border-top-right-radius: 6px;
+ border-bottom-right-radius: 6px;
+ background: #6f48eb;
+ color: white;
+}
 
+/* styling react calendar with custom css */
 @media screen and (min-width:280px) and (max-width:325px) {
     .slider-title h1 {
         font-size: 2.7em !important;
@@ -1042,13 +1131,15 @@ html {
     font-family: var(--accentFontFamily);
     color: var(--primaryColor);
     text-transform: capitalize;
-    font-size: 3.7em;
+    font-size: 3.2em;
 }
 
 .full-menu-title h4 {
     font-weight: bold;
     letter-spacing: 2px;
     position: relative;
+    font-size: 1.3em;
+
 }
 
 .full-menu-title h4::before {
@@ -1187,7 +1278,7 @@ html {
     justify-content: center;
     min-height: calc(70vh);
     position: relative;
-    background: url('./Images/Gallery/restaurant\ kitchen.jpeg');
+    background: url('client/src/Assets/Images/Gallery/restaurant kitchen.jpeg');
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1310,19 +1401,7 @@ html {
 /* SECTION - 10 END */
 
 /* SECTION - 11 START */
-.reservation-banner {
-    min-height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    background: url('./Images/Slider/8.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    margin-bottom: 120px;
-}
+
 
 .reservation-banner-title {
     text-align: center;

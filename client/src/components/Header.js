@@ -1,36 +1,30 @@
 import styled from "styled-components";
-
+import imgSrc from '../Assets/./Images/Icons/logo4.png';
 const Header = () => {
   return (
     <div>
-      {/* <div class="fakeLoader"></div> */}
-      <audio loop autoplay>
-        <source
-          src="../../Audio/Gabriel Light - All the stars (official audio 2020).mp3"
-          type="audio/mp3"
-        />
-      </audio>
+
       <section id="whole__section">
         {/* <!-- ====== NAVBAR START ====== --> */}
-        <div class="main_nav bg-dark autohide">
-          <div class="container">
+        <div className="main_nav bg-dark autohide">
+          <div className="container">
             <nav
-              class="navbar navbar-expand-lg navbar-dark custom-nav"
+              className="navbar navbar-expand-lg navbar-dark custom-nav"
               id="hotel-navbar"
             >
-              <div class="container-fluid">
-                <div class="navbar-logo">
+              <div className="container-fluid">
+                <div className="navbar-logo">
                   <img
-                    class="img-fluid logo"
-                    src="./Images/Icons/logo4.png"
+                    className="img-fluid logo"
+                    src={imgSrc}
                     alt="logo"
                   />
-                  <Logo class="navbar-brand" href="#">
-                    HOTEL<span style={{color: '#C59D5F'}}> CALIFORNIA</span>
+                  <Logo className="navbar-brand" href="http://localhost:3000/#">
+                    Hotel<span style={{color: '#C59D5F'}}>Mastali</span>
                   </Logo>
                 </div>
                 <button
-                  class="navbar-toggler"
+                  className="navbar-toggler"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#navbarNavDropdown"
@@ -38,69 +32,78 @@ const Header = () => {
                   aria-expanded="false"
                   aria-label="Toggle navigation"
                 >
-                  <span class="navbar-toggler-icon"></span>
+                  <span className="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                  <ul class="navbar-nav custom-navbar-nav w-100 justify-content-end">
-                    <li class="nav-item custom-nav-item">
+                <div className="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul className="navbar-nav custom-navbar-nav w-100 justify-content-end">
+                    <li className="nav-item custom-nav-item">
                       <a
-                        class="nav-link custom-nav-link active"
+                        className="nav-link custom-nav-link active"
                         aria-current="page"
-                        href="#home"
+                        href="http://localhost:3000/#home"
                       >
                         Home
                       </a>
                     </li>
-                    <li class="nav-item custom-nav-item">
+                    <li className="nav-item custom-nav-item">
                       <a
-                        class="nav-link custom-nav-link"
+                        className="nav-link custom-nav-link"
                         aria-current="page"
-                        href="#about"
+                        href="http://localhost:3000/#about"
                       >
                         About
                       </a>
                     </li>
-                    <li class="nav-item custom-nav-item">
+                    <li className="nav-item custom-nav-item">
                       <a
-                        class="nav-link custom-nav-link"
+                        className="nav-link custom-nav-link"
                         aria-current="page"
-                        href="#menu"
+                        href="http://localhost:3000/#menu"
                       >
                         Menu
                       </a>
                     </li>
-                    <li class="nav-item custom-nav-item">
+                    <li className="nav-item custom-nav-item">
                       <a
-                        class="nav-link custom-nav-link"
+                        className="nav-link custom-nav-link"
                         aria-current="page"
-                        href="#gallery"
+                        href="http://localhost:3000/#gallery"
                       >
                         Gallery
                       </a>
                     </li>
-                    <li class="nav-item custom-nav-item">
+                    <li className="nav-item custom-nav-item">
                       <a
-                        class="nav-link custom-nav-link"
+                        className="nav-link custom-nav-link"
                         aria-current="page"
-                        href="#reservation"
+                        href="http://localhost:3000/#Rooms"
+                      >
+                        Hotel
+                      </a>
+                    </li>
+                    <li className="nav-item custom-nav-item">
+                      <a
+                        className="nav-link custom-nav-link"
+                        aria-current="page"
+                        href="http://localhost:3000/#reservation"
                       >
                         Resturant
                       </a>
                     </li>
-                    <li class="nav-item custom-nav-item">
+                    <li className="nav-item custom-nav-item">
                       <a
-                        class="nav-link custom-nav-link"
+                        className="nav-link custom-nav-link"
                         aria-current="page"
-                        href="#contact"
+                        href="http://localhost:3000/#contact"
                       >
                         Contact
                       </a>
                     </li>
-                    <li class="nav-item custom-nav-item">
+                    <li className="nav-item custom-nav-item">
                       <a
-                        class="nav-link custom-nav-link"
+                        className="nav-link custom-nav-link"
                         aria-current="page"
-                        href="#LOCATION"
+                        href="http://localhost:3000/#LOCATION"
                       >
                         Location
                       </a>
